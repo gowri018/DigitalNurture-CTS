@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-
-   
+<head> 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="styles.css">
-
     <title>Local Community Event Portal</title>
-
     
     <style>
         #welcomeBanner{
-            background: royalblue;
+            background-color: royalblue;
             color:white;
-            padding:15px;
             text-align:center;
+            padding:15px;
+        }
+
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        img{
+            border: 2px solid black;
         }
     </style>
 
@@ -84,7 +87,7 @@
 
     
 
-    <section id="events" class="exercise">
+    <section id="events" class="exercise eventCard">
 
         <h2>Image Gallery</h2>
 
@@ -308,7 +311,7 @@
 <section class="news">
 
     The City Council has announced several exciting community events this month.
-    Residents are encouraged to participate in the annual Food Festival, Sports Day,
+    Residents are encouraged to participate in the <span class="highlight">annual Food Festival</span>, Sports Day,
     and Tree Plantation Drive. These events aim to bring people together and promote
     a healthy and active lifestyle.
 
@@ -395,8 +398,8 @@ window.onload=function(){
 
     if(saved){
 
-        document.getElementById("eventType").value =
-        saved;
+        document.getElementById("eventType").value = saved;
+        showFee();
     }
 }
 

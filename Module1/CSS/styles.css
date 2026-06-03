@@ -1,8 +1,8 @@
-/* CSS Exercise 1 */
+/* Exercise 1 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* CSS Exercise 2 */
+/* Exercise 2 */
 
 *{
     margin:0;
@@ -10,7 +10,7 @@
     box-sizing:border-box;
 }
 
-/* CSS Exercise 3 */
+/* Exercise 3 */
 
 h2{
     color:#2c3e50;
@@ -30,7 +30,7 @@ h3,p{
     line-height:1.6;
 }
 
-/* CSS Exercise 4 */
+/* Exercise 4 */
 
 body{
 
@@ -58,7 +58,7 @@ body{
     border-radius:5px;
 }
 
-/* CSS Exercise 5 */
+/* Exercise 5 */
 
 .highlight{
 
@@ -73,7 +73,7 @@ body{
     letter-spacing:1px;
 }
 
-/* CSS Exercise 6 */
+/* Exercise 6 */
 
 nav ul{
 
@@ -102,7 +102,12 @@ a:visited{
     color:lightgray;
 }
 
-/* CSS Exercise 7 */
+.news ul{
+    list-style-type:square;
+    list-style-position:inside;
+}
+
+/* Exercise 7 */
 
 table{
 
@@ -113,6 +118,8 @@ table{
     text-align:center;
 
     margin-top:20px;
+
+    
 }
 
 td{
@@ -127,7 +134,15 @@ tr:nth-child(even){
     background:#f2f2f2;
 }
 
-/* CSS Exercise 8 */
+th{
+    background:#2c3e50;
+
+    color:white;
+
+    padding:10px;
+}
+
+/* Exercise 8 */
 
 .exercise{
 
@@ -195,7 +210,7 @@ button{
     cursor:pointer;
 }
 
-/* CSS Exercise 9 */
+/* Exercise 9 */
 
 .news{
 
@@ -212,7 +227,7 @@ button{
     padding:20px;
 }
 
-/* CSS Exercise 10 */
+/* Exercise 10 */
 
 @media(max-width:768px){
 
@@ -229,23 +244,7 @@ button{
     body{
 
         font-size:14px;
+        
+        background-color:#f4f4f4;
     }
 }
-
-/* CSS Exercise 11 */
-
-/*
-Open Chrome DevTools
-
-F12
-
-Inspect Element
-
-Console
-
-Network Tab
-
-Device Toolbar
-
-Used for debugging
-*/

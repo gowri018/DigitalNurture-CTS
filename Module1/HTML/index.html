@@ -416,7 +416,7 @@ function validatePhone(){
     let phone =
     document.getElementById("phone").value;
 
-    if(phone.length != 10){
+    if(phone.length!= 10){
 
         alert("Enter valid phone number");
     }
@@ -466,8 +466,8 @@ window.onload = function(){
 
     if(saved){
 
-        document.getElementById("eventType").value =
-        saved;
+        document.getElementById("eventType").value = saved;
+        showFee();
     }
 }
 
