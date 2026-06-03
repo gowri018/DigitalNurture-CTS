@@ -1,6 +1,4 @@
-// ======================================
-// EXERCISE 1 - JavaScript Basics
-// ======================================
+// EXERCISE 1
 
 console.log("Welcome to the Community Portal");
 
@@ -8,9 +6,7 @@ window.onload = function () {
     alert("Community Portal Loaded Successfully");
 };
 
-// ======================================
-// EXERCISE 2 - Variables & Operators
-// ======================================
+// EXERCISE 2 
 
 const eventName = "Music Event";
 const eventDate = "15-06-2026";
@@ -20,9 +16,7 @@ console.log(`Event: ${eventName}
 Date: ${eventDate}
 Seats: ${seats}`);
 
-// ======================================
-// EXERCISE 3 - Conditionals, Loops & Error Handling
-// ======================================
+// EXERCISE 3
 
 let events = [
     {
@@ -56,9 +50,7 @@ events.forEach(function (event) {
 
 });
 
-// ======================================
-// EXERCISE 4 - Functions, Closures
-// ======================================
+// EXERCISE 4 
 
 function addEvent(event) {
     events.push(event);
@@ -87,9 +79,7 @@ function searchEvents(callback) {
     callback(events);
 }
 
-// ======================================
-// EXERCISE 5 - Objects & Prototype
-// ======================================
+// EXERCISE 5
 
 function Event(name, seats) {
 
@@ -116,9 +106,7 @@ Object.entries(e1).forEach(function (item) {
 
 });
 
-// ======================================
-// EXERCISE 6 - Arrays & Methods
-// ======================================
+// EXERCISE 6 
 
 events.push({
     name: "Workshop on Baking",
@@ -140,9 +128,8 @@ events.map(function (event) {
 
 console.log(eventNames);
 
-// ======================================
-// EXERCISE 7 - DOM Manipulation
-// ======================================
+
+// EXERCISE 7
 
 function displayEvents() {
 
@@ -170,9 +157,7 @@ function displayEvents() {
     section.appendChild(div);
 }
 
-// ======================================
-// EXERCISE 8 - Event Handling
-// ======================================
+// EXERCISE 8
 
 document.addEventListener(
     "keydown",
@@ -182,9 +167,7 @@ document.addEventListener(
     }
 );
 
-// ======================================
-// EXERCISE 9 - Promises
-// ======================================
+// EXERCISE 9
 
 function fetchEvents() {
 
@@ -203,7 +186,6 @@ function fetchEvents() {
         });
 }
 
-// Async / Await
 
 async function loadData() {
 
@@ -229,9 +211,7 @@ async function loadData() {
     }
 }
 
-// ======================================
-// EXERCISE 10 - Modern JavaScript
-// ======================================
+// EXERCISE 10 
 
 function welcome(name = "Guest") {
 
@@ -251,9 +231,7 @@ console.log(title);
 
 let copiedEvents = [...events];
 
-// ======================================
-// EXERCISE 11 - Form Validation
-// ======================================
+// EXERCISE 11
 
 let form =
 document.querySelector("form");
@@ -308,9 +286,7 @@ form.addEventListener(
     }
 );
 
-// ======================================
-// EXERCISE 12 - AJAX & Fetch API
-// ======================================
+// EXERCISE 12 
 
 function submitRegistration() {
 
@@ -355,9 +331,7 @@ function submitRegistration() {
     }, 2000);
 }
 
-// ======================================
-// EXERCISE 13 - Debugging
-// ======================================
+// EXERCISE 13
 
 function debugRegistration() {
 
@@ -368,33 +342,7 @@ function debugRegistration() {
     console.log("Step 2: Form Submitted");
 }
 
-// ======================================
-// EXERCISE 14 - jQuery
-// ======================================
-
-/*
-
-$(document).ready(function(){
-
-    $("#registerBtn").click(function(){
-
-        alert("Registered");
-    });
-
-    $(".eventCard").fadeIn();
-
-    $(".eventCard").fadeOut();
-
-});
-
-*/
-
-// Benefit of React/Vue:
-// Reusable components make UI easier to manage.
-
-// ======================================
-// FUNCTIONS USED IN YOUR HTML FILE
-// ======================================
+// EXERCISE 14
 
 function showFee() {
 
@@ -497,9 +445,49 @@ function getLocation() {
     );
 }
 
-// ======================================
-// PAGE LOAD
-// ======================================
+// Exercise 14
+
+$("#registerBtn").click(function () {
+
+    $("#eventCards").fadeOut(500).fadeIn(500);
+
+});
+
+console.log(
+    "Frameworks like React and Vue make UI development more scalable and maintainable."
+);
+
+// Loading Spinner for Async/Await
+
+async function loadData() {
+
+    document.getElementById("loading").style.display = "block";
+
+    try {
+
+        let response =
+        await fetch(
+            "https://jsonplaceholder.typicode.com/posts"
+        );
+
+        let data =
+        await response.json();
+
+        console.log(data);
+
+    }
+
+    catch(error) {
+
+        console.log(error);
+    }
+
+    finally {
+
+        document.getElementById("loading").style.display = "none";
+    }
+}
 
 displayEvents();
 fetchEvents();
+loadData();
